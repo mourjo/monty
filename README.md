@@ -26,7 +26,7 @@ lein run
 
 ## Result
 
-<img src="resources/result_5000.png" >
+<img src="resources/demo.png" >
 
 ## License
 
