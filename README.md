@@ -20,7 +20,13 @@ to door 2.
 
 ## Usage
 
-FIXME
+```bash
+lein run
+```
+
+## Result
+
+<img src="resources/result_5000.png" >
 
 ## License
 
