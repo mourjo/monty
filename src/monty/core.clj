@@ -1,4 +1,6 @@
-(ns monty.core)
+(ns monty.core
+  (:require [])
+  (:gen-class))
 
 (defn foo
   "I don't do a whole lot."
