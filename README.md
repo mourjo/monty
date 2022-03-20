@@ -24,6 +24,11 @@ to door 2.
 lein run
 ```
 
+For more number of experiments (takes a while):
+```bash
+NUM_EXPERIMENTS=1000 lein run
+```
+
 ## Result
 
 <img src="resources/demo.png" >
