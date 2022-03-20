@@ -22,6 +22,6 @@
 
 
 (t/deftest expected-probability-of-win
-  (let [[no-switch-win-percent switch-win-percent] (sut/run-repeated-experiment 1000000 3 1)]
+  (let [[no-switch-win-percent switch-win-percent] (sut/compute-win-percent 1000000 3 1)]
     (t/is (= 33.0 (Math/floor no-switch-win-percent)))
     (t/is (= 66.0 (Math/floor switch-win-percent)))))
