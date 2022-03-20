@@ -41,7 +41,7 @@
      (* 100 (double (/ second-selection-wins experiments)))]))
 
 
-(defn monte-carlo
+(defn monte-carlo-plot
   [experiments doors removals & {:keys [width height]
                                  :or {width 200 height 200}}]
   (let [data (mapcat (fn [num-experiment]
