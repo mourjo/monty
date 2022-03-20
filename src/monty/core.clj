@@ -59,9 +59,7 @@
     [:hr]
 
     [:h4 "What if there are 100 doors and many are revealed?"]
-    [:p "Intuitively, switching after the reveal seems like a better choice if out of many
-    doors, many are revealed. Suppose there are 100 doors and the contestant chooses 1,
-    but then the host reveals 98 of the other doors which are definitely not the answer."]
+    [:p "Intuitively, switching after the reveal seems like a better choice if out of many doors, many are revealed. Suppose there are 100 doors and the contestant chooses 1, but then the host reveals 98 of the other doors which are definitely not the answer."]
     [:div {:style {:display "flex" :flex-direction "row"}}
      [:vega-lite (line-plot experiments 100 70)]
      [:vega-lite (line-plot experiments 100 80)]
@@ -75,10 +73,7 @@
     [:hr]
 
     [:h4 "How does win percent change with reveals?"]
-    [:p "When the contenstant switches after the host's reveal, there is a higher chance
-    of winning for the contenstant when significant number of doors were
-    revealed. However, if the contestant does not switch, the chance is much lower --
-    uniformly distributed. Therefore, chance of winning is never worse when switching."]
+    [:p "When the contestant switches after the host's reveal, there is a higher chance of winning for the contestant when a significant number of doors are revealed. However, if the contestant does not switch, the chance is much lower – uniformly distributed. Therefore, the chance of winning is never worse when switching."]
     [:div {:style {:display "flex" :flex-direction "row"}}
      [:vega-lite (heat-map-plot experiments 100 false)]
      [:vega-lite (heat-map-plot experiments 100 true)]]]))
