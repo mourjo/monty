@@ -32,16 +32,16 @@
                  {:win-percent (if switch? second-selection-percent first-selection-percent)
                   :number-of-doors doors
                   :number-of-reveals-by-host reveals}))]
-    {:$schema "https://vega.github.io/schema/vega-lite/v5.json",
-     :data {:values data},
-     :mark "rect",
+    {:$schema "https://vega.github.io/schema/vega-lite/v5.json"
+     :data {:values data}
+     :mark "rect"
      :title (format "%d experiments (each bin), %s" experiments (if switch? "when switching" "when not switching"))
-     :width width,
-     :height height,
+     :width width
+     :height height
      :encoding
-     {:x {:bin {:maxbins max-doors}, :field "number-of-doors", :type "quantitative"},
-      :y {:bin {:maxbins max-doors}, :field "number-of-reveals-by-host", :type "quantitative"},
-      :color {:aggregate "average", :field "win-percent" :type "quantitative"}},
+     {:x {:bin {:maxbins max-doors} :field "number-of-doors" :type "quantitative"}
+      :y {:bin {:maxbins max-doors} :field "number-of-reveals-by-host" :type "quantitative"}
+      :color {:aggregate "average" :field "win-percent" :type "quantitative" :scale {:domainMax "100" :domainMin "0"}}}
      :config {:view {:stroke "transparent"}}}))
 
 
